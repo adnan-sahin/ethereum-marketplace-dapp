@@ -3,6 +3,7 @@
 const { serviceProvider1, serviceProvider2 } = require("./testAccounts");
 const { ethers } = require("hardhat");
 const { expect } = require("chai");
+const { BigNumber } = require("ethers");
 
 describe("ServiceManager", async () => {
     let ServiceManager,
@@ -38,16 +39,16 @@ describe("ServiceManager", async () => {
             const value = await instance.getServiceProvider(provider.address);
 
             const [
-                retrieved,
+                owner,
                 companyName,
                 email,
-                serviceCategory,
                 phone,
                 serviceAmount,
-                index,
+                serviceCategory,
+                index
             ] = value;
 
-            expect(retrieved).to.equal(provider.address);
+            expect(owner).to.equal(provider.address);
             expect(companyName).to.be.equal(serviceProvider1.companyName);
             expect(email).to.be.equal(serviceProvider1.email);
             expect(phone).to.be.equal(serviceProvider1.phone);

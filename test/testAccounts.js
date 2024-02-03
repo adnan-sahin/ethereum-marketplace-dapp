@@ -5,7 +5,7 @@ module.exports = {
         phone: "310-666-6666",
         serviceAmount: ethers.utils.parseUnits("10", "wei"),
         serviceCategory: 2,
-    },
+    },  
 
     serviceProvider2: {
         companyName: "Acme Painting Service",

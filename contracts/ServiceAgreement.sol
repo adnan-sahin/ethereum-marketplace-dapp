@@ -153,11 +153,11 @@ contract ServiceAgreement {
     function refund() external clientOnly {
         require(
             !agreementFulfilledOrNullified,
-            "this agreement has already been fulfilled or nullified"
+            "this agreement has already been fulfilled and nullified"
         );
         require(
             agreementStatus == WorkStatus.WillNotComplete,
-            "The agreement has not been marked as Will Not Complete"
+            "The Agreement has not been marked as Will Not Be Completed"
         );
         require(address(this).balance > 0, "There is no funds to refund");
 

@@ -38,7 +38,7 @@ describe("ServiceManager", async () => {
                 );
             const value = await instance.getServiceProvider(provider.address);
 
-            const [
+            const {
                 owner,
                 companyName,
                 email,
@@ -46,7 +46,7 @@ describe("ServiceManager", async () => {
                 serviceAmount,
                 serviceCategory,
                 index
-            ] = value;
+            } = value;
 
             expect(owner).to.equal(provider.address);
             expect(companyName).to.be.equal(serviceProvider1.companyName);

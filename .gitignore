@@ -23,6 +23,7 @@ node_modules/
 **/.vscode/
 **/.idea/
 **/artifacts
+/db
 
 npm-debug.log*
 yarn-debug.log*

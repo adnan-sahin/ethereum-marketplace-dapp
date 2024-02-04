@@ -19,7 +19,6 @@
         "jquery": true,
         "mocha": true
     },
-    "parser": "babel-eslint",
     "rules": {
         "quotes": [
             2,

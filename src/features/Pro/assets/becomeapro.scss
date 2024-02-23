@@ -1,0 +1,25 @@
+.become-pro {
+    background: lightgray;
+    width: 500px;
+    padding: 10px;
+    .become-pro-form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        .become-pro-heading {
+            display: flex;
+            margin: 0 0 1em;
+        }
+        .form {
+            .react-tel-input {
+                margin: 0 0 1em;
+                input {
+                    padding-left: 50px;
+                }
+            }
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

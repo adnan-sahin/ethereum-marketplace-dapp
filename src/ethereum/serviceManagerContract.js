@@ -256,3 +256,5 @@ const abi = [
         type: "function"
     }
 ];
+
+export { contractAddress, abi };

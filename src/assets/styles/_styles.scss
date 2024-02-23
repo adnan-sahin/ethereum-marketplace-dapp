@@ -1,15 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-// @import "~semantic-ui-css/semantic.min.css";
 @import "~toastr/build/toastr.min.css";
 @import "variables";
 @import "colors";
 @import "common";
 @import "layout";
 @import "site-wide";
-// @import "../../features/header/assets/styles/header";
+@import "../../features/header//assets//header.scss";
 // @import "../../features/dashboard/assets/styles/dashboard";
 // @import "../../features/dashboard/assets/styles/search";
-// @import "../../features/pro/assests/styles/becomeapro";
+@import "../../features/Pro/assets/becomeapro.scss";
 // @import "../../features/services/assets/styles/services-list";
 // @import "../../features/serviceProviders/assets/styles/service-providers";
 // @import "../../features/serviceAgreements/assets/styles/servivceAgreements";
